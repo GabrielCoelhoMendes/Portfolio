@@ -24,6 +24,13 @@ body.Hacker-mode {
   border-bottom: 4px solid #d9a74d;
   padding: 10px 20px;
 }
+@media only screen and (max-width: 600px) {
+  .navbar {
+    background-color: #444;
+    border-bottom: 4px solid #d9a74d;
+    padding: 10px 20px;
+  }
+}
 
 body.Hacker-mode .navbar {
   background-color: #183438;
@@ -46,6 +53,11 @@ body.Hacker-mode .navbar {
 .nav-button {
   gap: 10px;
   margin-left: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .nav-button {
+    margin-left: 0%;
+  }
 }
 
 .nav-links a {
@@ -168,14 +180,29 @@ body.Hacker-mode .linha span {
   flex-direction: row-reverse;
 }
 
+@media only screen and (max-width: 600px) {
+  .sobre-mim-content {
+    margin: 0 auto;          
+    align-items: center;
+    display: inline-block;  
+  }
+}
+
 .sobre-mim .texto h1 {
   font-size: 14vh;
   color: #378AD9;
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  .sobre-mim .texto h1 {
+    font-size: 9vh;
+    color: #378AD9;
+    margin-bottom: 20px;
+  }
+}
+
 body.Hacker-mode .sobre-mim .texto h1 {
-  font-size: 14vh;
   color: #63D21B;
   margin-bottom: 20px;
 }
@@ -184,6 +211,14 @@ body.Hacker-mode .sobre-mim .texto h1 {
   list-style: none;
   font-size: 3vh;
   line-height: 1.6;
+}
+
+@media only screen and (max-width: 600px) {
+  .sobre-mim .texto ul {
+    list-style: none;
+    font-size: 3vh;
+    line-height: 1.6;
+  }
 }
 
 .sobre-mim .texto li {
@@ -245,6 +280,20 @@ body.Hacker-mode .linha-divisao {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+@media only screen and (max-width: 600px) {
+  .habilidades-card {
+    background-color: #E9C170;
+    padding: 30px;
+    border-radius: 20px;
+    width: 70vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 3vh;
+  }
 }
 
 .habilidades-card h2 {
@@ -451,14 +500,14 @@ body.Hacker-mode .Github a{
 
 /* ====== RODAPÉ ====== */
 
-.rodape {
+#rodape {
   background-color: #535353;
   padding: 40px 0;
   border-top: 4px solid #d9a74d;
   text-align: left;
 }
 
-body.Hacker-mode .rodape {
+body.Hacker-mode #rodape {
   background-color: #183438;
   padding: 40px 0;
   border-top: 4px solid #84C4A5;
@@ -539,6 +588,3 @@ body.Hacker-mode .contato-card {
   line-height: 1.2;
   word-break: break-all;
 }
-
-
-
