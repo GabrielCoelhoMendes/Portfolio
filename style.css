@@ -28,7 +28,7 @@ body.Hacker-mode {
   .navbar {
     background-color: #444;
     border-bottom: 4px solid #d9a74d;
-    padding: 10px 20px;
+    padding: 20px 40px;
     min-width: 100%;
   }
 }
@@ -635,4 +635,5 @@ body.Hacker-mode .contato-card {
   line-height: 1.2;
   word-break: break-all;
 }
+
 
